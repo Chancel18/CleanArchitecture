@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SigmaSchoolManager.Application\SigmaSchoolManager.Application.csproj" />
+    <ProjectReference Include="..\SigmaSchoolManager.Domain\SigmaSchoolManager.Domain.csproj" />
+    <ProjectReference Include="..\SigmaSchoolManager.Infrastructure.Data\SigmaSchoolManager.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
+</Project>

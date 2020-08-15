@@ -1,0 +1,27 @@
+﻿@model SigmaSchoolManager.Application.ViewModels.StudentViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table id="book" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>RegistrationNumber</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var itemModel in Model.Students)
+        {
+            <tr>
+                <td>@itemModel.RegistrationNumber</td>
+                <td>@itemModel.FirstName</td>
+                <td>@itemModel.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
